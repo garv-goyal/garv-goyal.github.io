@@ -101,7 +101,6 @@ body.dark-mode .background-alt {
   border-color: #444 !important;      
 }
 
-
 body.dark-mode h1,
 body.dark-mode h2,
 body.dark-mode h3,
@@ -137,6 +136,22 @@ body.dark-mode .fb {
 
 body.dark-mode #contact p{
     color: #ffffff !important;
+}
+
+body.dark-mode header ul{
+    background-color: rgb(11, 17, 40) !important;
+}
+
+body.dark-mode header a{
+    color: rgb(238, 238, 239) !important;
+}
+
+body.dark-mode header a:hover,
+body.dark-mode header a:focus,
+body.dark-mode header li.active a {
+    background-color: rgb(36, 51, 111);
+    color: #f0f0f0;
+    text-decoration: none;
 }
 
 .dark-button-div {
@@ -993,7 +1008,7 @@ no-particles-js {
     }
 }
 
-@media only screen and (max-width: 992px) {
+/* @media only screen and (max-width: 992px) {
     #particles-js {
         display:none
     }
@@ -1034,9 +1049,9 @@ no-particles-js {
     #about p {
         text-align: left
     }
-}
+} */
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
     header {
         position:fixed;
         display: none;
@@ -1134,4 +1149,4 @@ no-particles-js {
         font-size: 0.9em;
         padding: 5px 10px
     }
-}
+} */
