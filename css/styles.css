@@ -76,6 +76,94 @@ body.active {
     }
 }
 
+body.dark-mode {
+    background-color: #323232; 
+    color: #eaeaea; 
+}
+
+body {
+    background-color: #ffffff; 
+    color: #121212; 
+}
+
+body.dark-mode #lead,
+body.dark-mode #about,
+body.dark-mode #experience,
+body.dark-mode #education,
+body.dark-mode #projects,
+body.dark-mode #skills,
+body.dark-mode #companies,
+body.dark-mode #contact,
+body.dark-mode footer,
+body.dark-mode .background-alt {
+  background-color: rgb(17, 28, 65) !important; 
+  color: #eaeaea !important;           
+  border-color: #444 !important;      
+}
+
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+  color: #eaeaea !important;
+}
+
+body.dark-mode #skills li {
+    color: rgb(17, 28, 65) !important;
+  }
+
+body.dark-mode p,
+body.dark-mode li,
+body.dark-mode a,
+body.dark-mode span,
+body.dark-mode div {
+  color: #cccccc !important; 
+}
+
+body.dark-mode .vtimeline-content,
+body.dark-mode .education-block,
+body.dark-mode .project {
+  border-color: #444 !important;
+  background-color: #2c2c2c !important; 
+}
+
+body.dark-mode .fb {
+    background-color: #e8e8e8;
+    color: rgb(17, 28, 65); 
+}
+
+
+.dark-button-div {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999; 
+  }
+
+  .fb {
+    background-color: rgb(17, 28, 65);
+    color: rgb(239, 239, 239); 
+    border: none; 
+    border-radius: 50%; 
+    width: 60px; 
+    height: 60px;
+    font-size: 20px; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .fb:hover {
+    transform: scale(101%); 
+  }
+  
+    
+
 header {
     position: absolute;
     top: 0;
@@ -129,10 +217,6 @@ header.active {
 header.sticky {
     position: fixed;
     z-index: 999
-}
-
-#menu.active {
-    display: block
 }
 
 #mobile-menu-open {
@@ -278,7 +362,7 @@ footer {
     height: 80vh;
     min-height: 500px;
     max-height: 1080px;
-    background: rgb(27, 45, 106);
+    background: rgb(17, 28, 65);
     /* background: rgb(11, 11, 42); */
     /* background-size: cover;
     padding: 15px;
@@ -425,9 +509,9 @@ no-particles-js {
 
 #lead-down i {
     animation: pulsate 1.5s ease infinite;
-    font-size: 3em; /* Adjust icon size if needed */
-    color: lightgray;
-    line-height: 55px; /* Vertically center the icon */
+    font-size: 3em; 
+    color: #d3d3d3;
+    line-height: 55px; 
 }
 
 #lead-down p {

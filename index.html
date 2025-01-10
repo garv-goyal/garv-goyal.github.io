@@ -32,6 +32,9 @@
         <i class="fa fa-bars" aria-hidden="true"></i>
     </div>-->
         <!-- End #mobile-menu-toggle -->
+        <div class="dark-button-div">
+            <button class="fb"><i class="fas fa-sun" aria-hidden="true"></i></button>
+          </div>      
         <header>
             <div id="mobile-menu-close">
                 <span>Close</span>
@@ -380,6 +383,27 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="js/particles.min.js"></script>
         <script src="js/scripts.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const button = document.querySelector('.fb');
+                const icon = button.querySelector('i');
+                const body = document.body;
+            
+                button.addEventListener('click', function () {
+                    body.classList.toggle('dark-mode'); // Toggle dark mode class on the body
+            
+                    // Toggle icon between sun and moon
+                    if (icon.classList.contains('fa-sun')) {
+                        icon.classList.remove('fa-sun');
+                        icon.classList.add('fa-moon');
+                    } else {
+                        icon.classList.remove('fa-moon');
+                        icon.classList.add('fa-sun');
+                    }
+                });
+            });
+            </script>
+            
 
     </body>
 
