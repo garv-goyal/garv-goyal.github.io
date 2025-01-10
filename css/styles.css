@@ -135,6 +135,9 @@ body.dark-mode .fb {
     color: rgb(17, 28, 65); 
 }
 
+body.dark-mode #contact p{
+    color: #ffffff !important;
+}
 
 .dark-button-div {
     position: fixed;
@@ -148,8 +151,8 @@ body.dark-mode .fb {
     color: rgb(239, 239, 239); 
     border: none; 
     border-radius: 50%; 
-    width: 60px; 
-    height: 60px;
+    width: 50px; 
+    height: 50px;
     font-size: 20px; 
     display: flex; 
     align-items: center;
@@ -161,54 +164,51 @@ body.dark-mode .fb {
   .fb:hover {
     transform: scale(101%); 
   }
-  
-    
 
 header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 5;
-    -webkit-animation-name: dropHeader;
-    animation-name: dropHeader;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-    -webkit-animation-timing-function: ease;
-    animation-timing-function: ease;
-    -webkit-animation-duration: 0.75s;
-    animation-duration: 0.75s
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
 }
-
 header ul {
-    background: none;
-    text-align: right;
-    padding: 10px;
-    margin: 0
+    background-color: #ebebeb;
+    border-radius: 40px;
+    padding: 4px 4px;
+    display: inline-block;
+    list-style: none;
+    margin: 0;
 }
-
 header li {
-    font-size: 1.2em;
-    display: inline-block
+    display: inline-block;
+    margin: 0 10px;
 }
-
 header a {
-    display: block;
-    color: #f2f2f5;
-    padding: 10px
-}
-
-header a:hover {
-    color: #7a7a7a;
+    color: #1b1b52;
     text-decoration: none;
-    background: rgba(255,255,255,0);
-    border-radius: 4px
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 50px;
+}
+header a:hover,
+header a:focus,
+header li.active a {
+    background-color: #ffffff;
+    color: #000;
+    text-decoration: none;
 }
 
-header a:focus {
-    color: #3C3C3C;
-    text-decoration: none
-}
+@media only screen and (max-width: 768px) {
+    header ul {
+        text-align: center;
+    }
+    header li {
+        margin: 0 10px; 
+    }
+  }
+  
 
 header.active {
     display: block

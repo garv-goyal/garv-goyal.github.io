@@ -403,6 +403,19 @@
                 });
             });
             </script>
+
+        <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const navItems = document.querySelectorAll('header li');
+                    navItems.forEach(item => {
+                        item.addEventListener('click', () => {
+                            navItems.forEach(i => i.classList.remove('active'));
+                            item.classList.add('active');
+                        });
+                    });
+                });
+        </script>
+                
             
 
     </body>
