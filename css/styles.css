@@ -1008,7 +1008,7 @@ no-particles-js {
     }
 }
 
-/* @media only screen and (max-width: 992px) {
+@media only screen and (max-width: 992px) {
     #particles-js {
         display:none
     }
@@ -1049,9 +1049,9 @@ no-particles-js {
     #about p {
         text-align: left
     }
-} */
+}
 
-/* @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     header {
         position:fixed;
         display: none;
@@ -1149,4 +1149,4 @@ no-particles-js {
         font-size: 0.9em;
         padding: 5px 10px
     }
-} */
+}
