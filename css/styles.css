@@ -358,6 +358,18 @@ footer {
     background: #3C3C3C
 }
 
+#about .heading {
+    position: relative;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 300;
+    margin: -20px 0 30px 0
+}
+
+#about .col-md-7 {
+    margin: -20px 0 30px 0
+}
+
 .background-alt {
     background: #f2f2f5
 }
