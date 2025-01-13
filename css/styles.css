@@ -86,7 +86,7 @@ body.dark-mode footer,
 body.dark-mode .background-alt {
   background-color: rgb(17, 28, 65) !important; 
   color: #eaeaea !important;           
-  border-color: #444 !important;      
+  border-color: #3d3d3d !important;      
 }
 
 body.dark-mode h1,
@@ -114,7 +114,7 @@ body.dark-mode .vtimeline-content,
 body.dark-mode .education-block,
 body.dark-mode .project {
   border-color: #444 !important;
-  background-color: #2c2c2c !important; 
+  background-color: hsla(0, 0%, 100%, .1) !important; 
 }
 
 body.dark-mode .fb {
@@ -140,6 +140,16 @@ body.dark-mode header li.active a {
     background-color: rgb(36, 51, 111);
     color: #f0f0f0;
     text-decoration: none;
+}
+
+body.dark-mode #lead a:hover,
+body.dark-mode #lead a:focus,
+body.dark-mode #lead li.active a {
+    color: #000000 !important;
+}
+
+body.dark-mode #companies li {
+    background: transparent;
 }
 
 .dark-button-div {
@@ -453,11 +463,6 @@ no-particles-js {
     overflow: hidden;    
 }
 
-
-#lead-content h1,#lead-content h2 {
-    margin: 40px
-}
-
 #lead-content h1 {
     color: #fff;
     font-weight: 900;
@@ -575,7 +580,7 @@ no-particles-js {
 
 #about {
     padding: 40px 15px;
-    border-bottom: 1px solid #dcd9d9
+    border-bottom: 0.5px solid #dcd9d9
 }
 
 #about h2 {
@@ -703,7 +708,7 @@ no-particles-js {
 
 #education {
     padding: 50px 15px 20px 15px;
-    border-bottom: 1px solid #dcd9d9;
+    border-bottom: 0.5px solid #dcd9d9;
     text-align: center
 }
 
@@ -758,7 +763,7 @@ no-particles-js {
 
 #projects {
     padding: 50px 15px;
-    border-bottom: 1px solid #dcd9d9;
+    border-bottom: 0.5px solid #dcd9d9;
     text-align: center
 }
 
@@ -832,13 +837,66 @@ no-particles-js {
     margin: 7px;
     padding: 5px 10px;
     color: #374054;
-    background: #e4e4ea;
+
     list-style: none;
     cursor: default;
     font-size: 1.2em
 }
 
-#languages {
+.skill-list {
+    display: flex;            
+    flex-wrap: wrap;          
+    justify-content: center;  
+    list-style: none;         
+    padding: 0;               
+    margin: 0 auto;           
+    max-width: 800px;         
+  }
+  
+  .skill-item {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;      
+    margin: 15px;             
+    cursor: pointer;          
+    background: none;         
+    border: none;             
+    box-shadow: none;         
+    transition: transform 0.3s ease; 
+  }
+  
+  
+  .skill-item:hover {
+    transform: scale(1.2);   
+  }
+  
+  .skill-item img {
+    font-size: 3em;           
+    margin-bottom: 5px;       
+  }
+
+  .skill-item i {
+    font-size: 3em;           
+    margin-bottom: 5px;       
+  }
+  
+  
+  .skill-item span {
+    font-size: 1em;
+    font-weight: 500;
+    color: #374054;          
+  }
+  
+  
+  body.dark-mode .skill-item span {
+    color: #cccccc !important; 
+  }
+  
+  body.dark-mode .skill-item i {
+    filter: brightness(0.8); 
+  }
+
+/* #languages {
     padding: 50px 15px;
     text-align: center;
     border-bottom: 1px solid #dcd9d9
@@ -865,12 +923,12 @@ no-particles-js {
     list-style: none;
     cursor: default;
     font-size: 1.4em
-}
+} */
 
 #companies {
     padding: 30px 0px;
     text-align: center;
-    border-bottom: 1px solid #dcd9d9
+    border-bottom: 0.5px solid #dcd9d9
 }
 
 #companies h2 {
@@ -1249,15 +1307,17 @@ no-particles-js {
 } */
 
 #lead {
-    padding: 20px 10px; 
+    padding: 100px 100px; 
 }
 
 #lead-content h1 {
-    font-size: 4em; 
+    margin: 40px;
+    font-size: auto; 
 }
 
 #lead-content h2 {
-    font-size: 2em; 
+    margin-bottom: 40px;
+    font-size: auto; 
 }
 
 #lead-content h4 {
